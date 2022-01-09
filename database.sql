@@ -1,0 +1,14 @@
+-- 1. Create tables for the above list given
+-- create table guvi (user varchar(20),codekata int,attendance varchar(10),topic varchar(30),tasks int,company_drives varchar(30),mentors varchar(20),students_activated_courses int,courses varchar(30));
+-- 2. insert at least 5 rows of values in each table ,used the query by five times
+-- insert into guvi (user,codekata,attendance,topic,tasks,company_drives,mentors,students_activated_courses,courses) values('sairam',50,'95%','Queries',10,'5','uma',"back-end-developer",'MYSQL');
+-- 3.get number problems solved in codekata by combining the users
+-- select user , codekata   from guvi;
+-- 4. display the no of company drives attended by a user
+-- select company_drives from guvi where user = "sairam";
+-- 5. combine and display students_activated_courses and courses for a specific user groping them based on the course
+-- select students_activated_courses,courses from guvi  where user="ravi" group by courses;
+-- 6. list all the mentors
+-- select distinct mentors from guvi;
+-- 7. list the number of students that are assigned for a mentor
+-- select count(user),mentors from guvi group by mentors;
